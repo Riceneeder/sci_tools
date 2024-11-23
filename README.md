@@ -2,6 +2,8 @@
 
 这是我自用的工具集合，包括一个SCI pdf文件批量转markdown工具和一个markdown文件批量翻译工具。前端使用 vue.js 构建，后端使用 flask 构建。后端是一个简单的 REST API，用于为前端提供服务并进行计算。
 
+![image](img/image.png)
+
 ## Usage
 
 first clone the repository
@@ -15,7 +17,7 @@ cd sci_tools/vue
 yarn install && yarn build
 ```
 
-run the python server in the root directory, the server will be running on `0.0.0.0:5` by default
+run the python server in the root directory, the server will be running on `0.0.0.0:5000` by default
 ```bash
 pip install -r requirements.txt
 gunicorn --worker-class eventlet -w 1 app:app -b 0.0.0.0:5000
